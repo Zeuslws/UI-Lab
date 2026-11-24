@@ -1,0 +1,243 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261125045251
+Username: DESKTOP-CCA4M4I\kong
+RunAs User: DESKTOP-CCA4M4I\kong
+Configuration Name: 
+Machine: DESKTOP-CCA4M4I (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\Resume-Cypress.ps1
+Process ID: 1584
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\Google\lab12\ui-lab\evidence\20261125-045251-cypress-resume\console.txt
+
+53 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   cypress@16.3.0 (postinstall: node dist/index.js --exec install)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+√  Verified Cypress! C:\Users\kong\AppData\Local\Cypress\Cache\16.3.0\Cypress
+Cypress package version: 16.3.0
+Cypress binary version: 16.3.0
+Electron version: 43.8.4
+Bundled Node version: 24.22.1
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.3.0                                                                         │
+  │ Browser:        Chrome 158 (headless)                                                          │
+  │ Node Version:   v24.22.3 (C:\Users\kong\AppData\Local\ui-lab-tools\node-v24.22.3-win-x64\node. │
+  │                 exe)                                                                           │
+  │ Specs:          2 found (pizza-scenario.cy.js, web-form.cy.js)                                 │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  pizza-scenario.cy.js                                                            (1 of 2)
+
+
+  QP-01 A custom pizza reaches the admin list
+    √ follows all seven steps in the same browser session (7471ms)
+
+
+  1 passing (10s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  3                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     10 seconds                                                                       │
+  │ Spec Ran:     pizza-scenario.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste    (1264x1197)
+     p4-recommendation.png
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste    (1264x1225)
+     p5-login-needed.png
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste     (1264x661)
+     p7-admin-list.png
+
+
+  (Video)
+
+  -  Video output: E:\Google\lab12\ui-lab\cypress\cypress\videos\pizza-scenario.cy.js.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  web-form.cy.js                                                                  (2 of 2)
+
+
+  Web form
+    √ fills in the fields and sends the form (1011ms)
+
+
+  1 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     web-form.cy.js                                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Video output: E:\Google\lab12\ui-lab\cypress\cypress\videos\web-form.cy.js.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  pizza-scenario.cy.js                     00:10        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  web-form.cy.js                           00:02        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:12        2        2        -        -        -
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.3.0                                                                         │
+  │ Browser:        Chrome 158 (headless)                                                          │
+  │ Node Version:   v24.22.3 (C:\Users\kong\AppData\Local\ui-lab-tools\node-v24.22.3-win-x64\node. │
+  │                 exe)                                                                           │
+  │ Specs:          2 found (pizza-scenario.cy.js, web-form.cy.js)                                 │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  pizza-scenario.cy.js                                                            (1 of 2)
+
+
+  QP-01 A custom pizza reaches the admin list
+    √ follows all seven steps in the same browser session (7602ms)
+
+
+  1 passing (11s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  3                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     10 seconds                                                                       │
+  │ Spec Ran:     pizza-scenario.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste    (1264x1197)
+     p4-recommendation.png
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste    (1264x1225)
+     p5-login-needed.png
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste     (1264x661)
+     p7-admin-list.png
+
+
+  (Video)
+
+  -  Video output: E:\Google\lab12\ui-lab\cypress\cypress\videos\pizza-scenario.cy.js.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  web-form.cy.js                                                                  (2 of 2)
+
+
+  Web form
+    √ fills in the fields and sends the form (1008ms)
+
+
+  1 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     web-form.cy.js                                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Video output: E:\Google\lab12\ui-lab\cypress\cypress\videos\web-form.cy.js.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  pizza-scenario.cy.js                     00:10        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  web-form.cy.js                           00:02        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:12        2        2        -        -        -
+CYPRESS COMPLETE: both full runs passed. Tell ChatGPT to review the saved results.
+**********************
+Windows PowerShell transcript end
+End time: 20261125045521
+**********************

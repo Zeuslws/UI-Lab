@@ -1,0 +1,259 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261125044806
+Username: DESKTOP-CCA4M4I\kong
+RunAs User: DESKTOP-CCA4M4I\kong
+Configuration Name: 
+Machine: DESKTOP-CCA4M4I (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\Run-Lab.ps1
+Process ID: 1852
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\Google\lab12\ui-lab\evidence\20261125-044806\console.txt
+Robot Framework 7.5.1 (Python 3.12.1 on win32)
+ChromeDriver 158.0.8127.88 (0cefb18236a23db1ebb6b2bc040fbbaf8cbe759e-refs/branch-heads/8127_36@{#32})
+v24.22.3
+==============================================================================
+First
+==============================================================================
+The Web Form Opens :: Open the web form and check its title (Step ... | PASS |
+------------------------------------------------------------------------------
+First                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-title-correct\output.xml
+Log:     E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-title-correct\log.html
+Report:  E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-title-correct\report.html
+==============================================================================
+First
+==============================================================================
+The Web Form Opens :: Open the web form and check its title (Step ... | FAIL |
+Title should have been 'Web Form' but was 'Web form'.
+------------------------------------------------------------------------------
+First                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-title-wrong\output.xml
+Log:     E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-title-wrong\log.html
+Report:  E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-title-wrong\report.html
+==============================================================================
+First & Web Form
+==============================================================================
+First & Web Form.First
+==============================================================================
+The Web Form Opens :: Open the web form and check its title (Step ... | PASS |
+------------------------------------------------------------------------------
+First & Web Form.First                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+First & Web Form.Web Form
+==============================================================================
+Every Kind Of Field :: Fill the required field types, submit, and ... | PASS |
+------------------------------------------------------------------------------
+First & Web Form.Web Form                                             | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+First & Web Form                                                      | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-form\output.xml
+Log:     E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-form\log.html
+Report:  E:\Google\lab12\ui-lab\evidence\20261125-044806\robot-form\report.html
+==============================================================================
+Pizza Scenario :: QP-01: A custom pizza reaches the admin list.
+==============================================================================
+QP-01 A Custom Pizza Reaches The Admin List :: Verify restrictions... | PASS |
+------------------------------------------------------------------------------
+Pizza Scenario :: QP-01: A custom pizza reaches the admin list.       | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Google\lab12\ui-lab\robot\results\run1\output.xml
+Log:     E:\Google\lab12\ui-lab\robot\results\run1\log.html
+Report:  E:\Google\lab12\ui-lab\robot\results\run1\report.html
+==============================================================================
+Pizza Scenario :: QP-01: A custom pizza reaches the admin list.
+==============================================================================
+QP-01 A Custom Pizza Reaches The Admin List :: Verify restrictions... | PASS |
+------------------------------------------------------------------------------
+Pizza Scenario :: QP-01: A custom pizza reaches the admin list.       | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Google\lab12\ui-lab\robot\results\run2\output.xml
+Log:     E:\Google\lab12\ui-lab\robot\results\run2\log.html
+Report:  E:\Google\lab12\ui-lab\robot\results\run2\report.html
+Cypress package version: 16.2.1
+Cypress binary version: 16.2.1
+Electron version: 41.7.0
+Bundled Node version: 24.15.0
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.2.1                                                                         │
+  │ Browser:        Chrome 158 (headless)                                                          │
+  │ Node Version:   v24.22.3 (C:\Users\kong\AppData\Local\ui-lab-tools\node-v24.22.3-win-x64\node. │
+  │                 exe)                                                                           │
+  │ Specs:          1 found (web-form.cy.js)                                                       │
+  │ Searched:       E:\Google\lab12\ui-lab\cypress\cypress\e2e\web-form.cy.js                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  web-form.cy.js                                                                  (1 of 1)
+
+
+  Web form
+    1) fills in the fields and sends the form
+
+
+  0 passing (12s)
+  1 failing
+
+  1) Web form
+       fills in the fields and sends the form:
+
+      Timed out retrying after 10000ms
+      + expected - actual
+
+      -'Web form'
+      +'Web Form'
+
+      at Context.eval (webpack://ui-lab-cypress/./cypress/e2e/web-form.cy.js:5:15)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     11 seconds                                                                       │
+  │ Spec Ran:     web-form.cy.js                                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\web-form.cy.js\Web form -- fi     (1264x625)
+     lls in the fields and sends the form (failed).png
+
+
+  (Video)
+
+  -  Video output: E:\Google\lab12\ui-lab\cypress\cypress\videos\web-form.cy.js.mp4
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  web-form.cy.js                           00:11        1        -        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 1 failed (100%)                     00:11        1        -        1        -        -
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.2.1                                                                         │
+  │ Browser:        Chrome 158 (headless)                                                          │
+  │ Node Version:   v24.22.3 (C:\Users\kong\AppData\Local\ui-lab-tools\node-v24.22.3-win-x64\node. │
+  │                 exe)                                                                           │
+  │ Specs:          2 found (pizza-scenario.cy.js, web-form.cy.js)                                 │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  pizza-scenario.cy.js                                                            (1 of 2)
+
+
+  QP-01 A custom pizza reaches the admin list
+    √ follows all seven steps in the same browser session (7427ms)
+
+
+  1 passing (10s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  3                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     9 seconds                                                                        │
+  │ Spec Ran:     pizza-scenario.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste    (1264x1219)
+     p4-recommendation.png
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste    (1264x1247)
+     p5-login-needed.png
+  -  E:\Google\lab12\ui-lab\cypress\cypress\screenshots\pizza-scenario.cy.js\qp01-ste     (1264x661)
+     p7-admin-list.png
+
+
+  (Video)
+
+  -  Video output: E:\Google\lab12\ui-lab\cypress\cypress\videos\pizza-scenario.cy.js.mp4
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  web-form.cy.js                                                                  (2 of 2)
+* is not a valid URL
+Error: * is not a valid URL
+    at <embedded>:616:604067
+    at b._handleMessage (<embedded>:616:606400)
+    at q.<anonymous> (<embedded>:616:606039)
+    at q.emit (node:events:509:28)
+    at j.U (<embedded>:616:591217)
+    at j.emit (node:events:509:28)
+    at j.dataMessage (<embedded>:616:570899)
+    at j.getData (<embedded>:616:570081)
+    at j.startLoop (<embedded>:616:566801)
+    at j._write (<embedded>:616:566156)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Socket.W (<embedded>:616:591903)
+    at Socket.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)
+PS>TerminatingError(): "Cypress run1 failed. See evidence in E:\Google\lab12\ui-lab\evidence\20261125-044806."
+**********************
+Windows PowerShell transcript end
+End time: 20261125044930
+**********************

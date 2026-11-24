@@ -1,0 +1,180 @@
+{
+  "browserName": "chrome",
+  "browserPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "browserVersion": "158.0.8127.37",
+  "config": {
+    "configFile": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress.config.js",
+    "testingType": "e2e",
+    "viewportWidth": 1280,
+    "viewportHeight": 1600,
+    "defaultCommandTimeout": 10000,
+    "video": true,
+    "retries": 0,
+    "projectRoot": "E:\\Google\\lab12\\ui-lab\\cypress",
+    "projectName": "cypress",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "baseUrl": null,
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "downloadsFolder": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\downloads",
+    "env": {},
+    "expose": {},
+    "experimentalCspAllowList": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "injectDocumentDomain": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalWebKitSupport": false,
+    "visibilityStrategy": "modern",
+    "fileServerFolder": "E:\\Google\\lab12\\ui-lab\\cypress",
+    "fixturesFolder": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\fixtures",
+    "forceHttp1": false,
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "justInTimeCompile": true,
+    "keystrokeDelay": null,
+    "manageBrowserMemory": true,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 64570,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "removeSRIAttributes": false,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\Users\\kong\\AppData\\Local\\ui-lab-tools\\node-v24.22.3-win-x64\\node.exe",
+    "resolvedNodeVersion": "24.22.3",
+    "responseTimeout": 30000,
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\support\\e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "trustedCertificates": [],
+    "userAgent": null,
+    "videoCompression": false,
+    "videosFolder": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\videos",
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Chrome",
+        "family": "chromium",
+        "majorVersion": "158",
+        "name": "chrome",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "version": "158.0.8127.37"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "155",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "155.0.4283.45"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 146,
+        "name": "electron",
+        "path": "",
+        "version": "146.0.7680.216"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\kong\\AppData\\Local\\Cypress\\Cache\\16.2.1\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": false,
+    "version": "16.2.1",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "16.2.1",
+  "endedTestsAt": "2026-11-24T21:49:10.282Z",
+  "osName": "win32",
+  "osVersion": "Microsoft Windows 10 Pro - 10.0.19045",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 0,
+        "pending": 0,
+        "failures": 1,
+        "start": "2026-11-24T21:48:58.755Z",
+        "end": "2026-11-24T21:49:10.283Z",
+        "duration": 11528
+      },
+      "screenshots": [
+        {
+          "height": 625,
+          "name": null,
+          "path": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\screenshots\\web-form.cy.js\\Web form -- fills in the fields and sends the form (failed).png",
+          "takenAt": "2026-11-24T21:49:10.199Z",
+          "width": 1264
+        }
+      ],
+      "spec": {
+        "absolute": "E:/Google/lab12/ui-lab/cypress/cypress/e2e/web-form.cy.js",
+        "fileExtension": ".js",
+        "fileName": "web-form",
+        "name": "web-form.cy.js",
+        "relative": "cypress\\e2e\\web-form.cy.js"
+      },
+      "stats": {
+        "duration": 11532,
+        "endedAt": "2026-11-24T21:49:10.282Z",
+        "failures": 1,
+        "passes": 0,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-11-24T21:48:58.750Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 10000ms: expected 'Web form' to equal 'Web Form'\n    at Context.eval (webpack://ui-lab-cypress/./cypress/e2e/web-form.cy.js:5:15)",
+          "duration": 10233,
+          "state": "failed",
+          "title": [
+            "Web form",
+            "fills in the fields and sends the form"
+          ]
+        }
+      ],
+      "video": "E:\\Google\\lab12\\ui-lab\\cypress\\cypress\\videos\\web-form.cy.js.mp4"
+    }
+  ],
+  "startedTestsAt": "2026-11-24T21:48:58.750Z",
+  "totalDuration": 11532,
+  "totalFailed": 1,
+  "totalPassed": 0,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 1,
+  "totalTests": 1
+}

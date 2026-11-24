@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5.1 (Python 3.12.1 on win32)" generated="2026-11-25T04:48:08.379420" rpa="false" schemaversion="5">
+<suite id="s1" name="First" source="E:\Google\lab12\ui-lab\robot\first.robot">
+<test id="s1-t1" name="The Web Form Opens" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:09.103338" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.selenium.dev/selenium/web/web-form.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>service=executable_path=r'%{CHROMEDRIVER}'</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-25T04:48:09.032388" elapsed="7.096911"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:16.134298" level="INFO">Page title is 'Web form'.</msg>
+<arg>${EXPECTED_TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-11-25T04:48:16.129299" elapsed="0.004999"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-25T04:48:16.134298" elapsed="2.665249"/>
+</kw>
+<doc>Open the web form and check its title (Step 3.2).</doc>
+<status status="PASS" start="2026-11-25T04:48:09.031353" elapsed="9.768194"/>
+</test>
+<status status="PASS" start="2026-11-25T04:48:08.615677" elapsed="10.184785"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="First" id="s1" pass="1" fail="0" skip="0">First</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

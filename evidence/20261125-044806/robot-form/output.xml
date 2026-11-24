@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5.1 (Python 3.12.1 on win32)" generated="2026-11-25T04:48:23.758224" rpa="false" schemaversion="5">
+<suite id="s1" name="First &amp; Web Form">
+<suite id="s1-s1" name="First" source="E:\Google\lab12\ui-lab\robot\first.robot">
+<test id="s1-s1-t1" name="The Web Form Opens" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:24.170225" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.selenium.dev/selenium/web/web-form.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>service=executable_path=r'%{CHROMEDRIVER}'</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-25T04:48:24.170225" elapsed="0.582017"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:24.757241" level="INFO">Page title is 'Web form'.</msg>
+<arg>${EXPECTED_TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-11-25T04:48:24.753240" elapsed="0.004001"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-25T04:48:24.757241" elapsed="2.666264"/>
+</kw>
+<doc>Open the web form and check its title (Step 3.2).</doc>
+<status status="PASS" start="2026-11-25T04:48:24.168224" elapsed="3.255281"/>
+</test>
+<status status="PASS" start="2026-11-25T04:48:23.793224" elapsed="3.631285"/>
+</suite>
+<suite id="s1-s2" name="Web Form" source="E:\Google\lab12\ui-lab\robot\web_form.robot">
+<test id="s1-s2-t1" name="Every Kind Of Field" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:27.484503" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.selenium.dev/selenium/web/web-form.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>service=executable_path=r'%{CHROMEDRIVER}'</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-25T04:48:27.483475" elapsed="0.897823"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>1600</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.382298" elapsed="0.025000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.408297" level="INFO">Typing text 'Robot' into text field 'id:my-text-id'.</msg>
+<arg>id:my-text-id</arg>
+<arg>Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.407298" elapsed="0.053999"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.526297" level="INFO">Content of text field 'id:my-text-id' is 'Robot'.</msg>
+<arg>id:my-text-id</arg>
+<arg>Robot</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.461297" elapsed="0.065000"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.526297" level="INFO">Typing password into text field 'name:my-password'.</msg>
+<msg time="2026-11-25T04:48:28.544297" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:my-password</arg>
+<arg>Secret123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.526297" elapsed="0.044000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.570297" level="INFO">Typing text 'My first form test' into text field 'name:my-textarea'.</msg>
+<arg>name:my-textarea</arg>
+<arg>My first form test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.570297" elapsed="0.041000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.612297" level="INFO">Selecting options from selection list 'name:my-select' by label Two.</msg>
+<arg>name:my-select</arg>
+<arg>Two</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.612297" elapsed="0.062000"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.674297" level="INFO">Verifying list 'name:my-select' has option [ Two ] selected.</msg>
+<msg time="2026-11-25T04:48:28.681297" level="INFO">Current page contains list 'name:my-select'.</msg>
+<arg>name:my-select</arg>
+<arg>Two</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.674297" elapsed="0.049000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.723297" level="INFO">Selecting checkbox 'id:my-check-2'.</msg>
+<arg>id:my-check-2</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.723297" elapsed="0.046001"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.769298" level="INFO">Verifying checkbox 'id:my-check-2' is selected.</msg>
+<arg>id:my-check-2</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.769298" elapsed="0.013998"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.783296" level="INFO">Selecting 'my-radio-2' from radio button 'my-radio'.</msg>
+<arg>my-radio</arg>
+<arg>my-radio-2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.783296" elapsed="0.036002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.820297" level="INFO">Typing text '11/05/2026' into text field 'name:my-date'.</msg>
+<arg>name:my-date</arg>
+<arg>11/05/2026</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.820297" elapsed="0.079001"/>
+</kw>
+<kw name="Textfield Value Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.914296" level="INFO">Content of text field 'name:my-date' is '11/05/2026'.</msg>
+<arg>name:my-date</arg>
+<arg>11/05/2026</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.899298" elapsed="0.014998"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:28.915296" level="INFO">Sending key(s) ('ESC',) to name:my-date element.</msg>
+<msg time="2026-11-25T04:48:29.187753" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2026-11-25T04:48:29.187753" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>name:my-date</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-11-25T04:48:28.914296" elapsed="0.278455"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:29.192751" level="INFO">Clicking button 'css:button[type=submit]'.</msg>
+<arg>css:button[type=submit]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-25T04:48:29.192751" elapsed="0.481135"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:message</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-25T04:48:29.673886" elapsed="0.011997"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:29.688882" level="INFO">Page title is 'Web form - target page'.</msg>
+<arg>Web form - target page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-11-25T04:48:29.685883" elapsed="0.002999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-11-25T04:48:29.689883" level="INFO">Verifying element 'id:message' contains exact text 'Received!'.</msg>
+<arg>id:message</arg>
+<arg>Received!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-11-25T04:48:29.689883" elapsed="0.008000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-25T04:48:29.697883" elapsed="2.134539"/>
+</kw>
+<doc>Fill the required field types, submit, and verify the received message.</doc>
+<status status="PASS" start="2026-11-25T04:48:27.483475" elapsed="4.349947"/>
+</test>
+<status status="PASS" start="2026-11-25T04:48:27.426473" elapsed="4.409984"/>
+</suite>
+<status status="PASS" start="2026-11-25T04:48:23.759224" elapsed="8.080234"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="First &amp; Web Form" id="s1" pass="2" fail="0" skip="0">First &amp; Web Form</stat>
+<stat name="First" id="s1-s1" pass="1" fail="0" skip="0">First &amp; Web Form.First</stat>
+<stat name="Web Form" id="s1-s2" pass="1" fail="0" skip="0">First &amp; Web Form.Web Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
